@@ -2,8 +2,8 @@ import React from 'react';
 
 const ChecklistIncomplete = () => {
     return (
-        <div>
-            <h1>Checklist of Incompleted Items Goes Here</h1>
+        <div className="container">
+            <h1>Incomplete</h1>
         </div>
     )
 };

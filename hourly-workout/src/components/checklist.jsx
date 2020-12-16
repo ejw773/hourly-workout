@@ -1,23 +1,29 @@
 import React from 'react';
-import defaultState from '../Data.js'
+import defaultStateData from '../Data.js'
 import WorkoutItem from './workout_item'
 
 const Checklist = () => {
-    const theStuff = ['a', 'b', 'c', 'd'];
-    console.log(theStuff);
+    const chosenWorkout = defaultStateData.sculpt_a;
     return (
         <div className="container">
             <h1>Today's Workout</h1>
-            <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                <label className="form-check-label" htmlFor="defaultCheck1">{defaultState.sculpt_a.warm_up[0].name} Time: {defaultState.sculpt_a.warm_up[0].time}</label>
-            </div>
-            <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-                <label className="form-check-label" htmlFor="defaultCheck2">{defaultState.sculpt_a.warm_up[1].name} Time: {defaultState.sculpt_a.warm_up[1].time}</label>
-            </div>
-            <div>
-                <WorkoutItem theExercise={theStuff.map} />
+            <div className="list-container">
+                <h2>Warm-Up</h2>
+                <div>
+                    <WorkoutItem theExercise={chosenWorkout.warm_up} />
+                </div>
+                <h2>Cycle 1</h2>
+                <div>
+                    <WorkoutItem theExercise={chosenWorkout.cycle_1} />
+                </div>
+                <h2>Cycle 2</h2>
+                <div>
+                    <WorkoutItem theExercise={chosenWorkout.cycle_2} />
+                </div>
+                <h2>Cycle 3</h2>
+                <div>
+                    <WorkoutItem theExercise={chosenWorkout.cycle_3} />
+                </div>
             </div>
         </div>
     )

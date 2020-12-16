@@ -1,15 +1,23 @@
 import React from 'react';
-import WorkoutItem from './workout_item';
 
-class RenderExercises extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <div className="exercises-container">
-                {this.props.sculpt_a}
-            </div>
-        )
-    }
+const RenderExercises = (props) => {
+    console.log(props);
+    console.log(props.name);
+    console.log(props.id);
+    console.log(props.reps);
+    function helloWorld(event) {console.log(event.target)};
+    return (
+        props.time===null ? 
+        <div className="form-check">
+            <input className="form-check-input" id={props.id} onChange={helloWorld} type="checkbox" value="" key={props.id} />
+            <label className="form-check-label" htmlFor="defaultCheck1">{props.name} (Reps: {props.reps})</label>
+        </div>
+        :
+        <div className="form-check">
+            <input className="form-check-input" id={props.id} onChange={helloWorld} type="checkbox" value="" key={props.id} />
+            <label className="form-check-label" htmlFor="defaultCheck1">{props.name} (Time: {props.time})</label>
+        </div>
+    )
 }
+
+export default RenderExercises;

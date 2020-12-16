@@ -1,10 +1,14 @@
 import React from 'react';
-import defaultState from '../Data.js'
+import RenderExercises from './render_exercises'
 
-const WorkoutItem = (item) => {
+const WorkoutItem = (props) => {
+    console.log(props);
     return (
         <div>
-            <p>Item Goes Here</p>
+            {props.theExercise.map((exercise) => (
+                <RenderExercises key={exercise.id} id={exercise.id} name={exercise.name} time={exercise.time} reps={exercise.reps} />
+            ))}
+            <h1></h1>
         </div>
     )
 }

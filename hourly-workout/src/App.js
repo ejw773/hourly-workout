@@ -4,12 +4,10 @@ import Checklist from './components/checklist';
 import ChecklistComplete from './components/checklist_complete';
 import ChecklistIncomplete from './components/checklist_incomplete';
 import WorkoutSelection from './components/workout_selection';
-import defaultState from './Data.js'
-
+import FakeStore from './store';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const App = () => {
-  console.log(defaultState)
   return (
     <Router>
         <div className="btn-group container" role="group" arial-label="completion-menu">

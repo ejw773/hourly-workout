@@ -19,3 +19,8 @@ body {
 label {
   font-size: 1.3em;
 }
+
+h2 {
+  color: red;
+  text-align: center;
+}

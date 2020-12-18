@@ -4,22 +4,46 @@ import Checklist from './components/checklist';
 import ChecklistComplete from './components/checklist_complete';
 import ChecklistIncomplete from './components/checklist_incomplete';
 import WorkoutSelection from './components/workout_selection';
-import FakeStore from './store';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import defaultStateData from './Data';
 
-const App = () => {
+
+class App extends React.Component {
+  //This logic should be removed from App.js, and moved to the various components
+  constructor(props) {
+    super(props);
+    this.changeSelection = this.changeSelection.bind(this);
+    this.toggleExercise = this.toggleExercise.bind(this);
+    this.state = defaultStateData;
+  }
+
+  changeSelection(event) {
+    let selectedWorkout = event.target.id;
+    this.setState(state => {
+      return {
+        ...state,
+        workout_selection: selectedWorkout
+      }
+    })
+  }
+
+  toggleExercise(event) {
+    console.log(event.target.checked);
+  }
+
+  render() {
   return (
     <Router>
+      <div>
+        <WorkoutSelection changeSelection={this.changeSelection} workout_selection={this.state.workout_selection} />
+      </div>
         <div className="btn-group container" role="group" arial-label="completion-menu">
-          <Link type="button" className="btn btn-info" to="/today">Today's Workout</Link> <br />
+          <Link type="button" className="btn btn-info" to="/">Today's Workout</Link> <br />
           <Link type="button" className="btn btn-danger" to="/incomplete">Incomplete</Link> <br />
           <Link type="button" className="btn btn-success" to="/complete">Completed</Link>
         </div>
       <Switch>
         <Route exact path="/">
-          <WorkoutSelection />
-        </Route>
-        <Route path="/today">
           <Checklist />
         </Route>
         <Route path="/incomplete">
@@ -31,6 +55,7 @@ const App = () => {
       </Switch>
     </Router>
   )
+}
 }
 
 export default App;

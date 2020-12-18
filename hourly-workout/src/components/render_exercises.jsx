@@ -1,23 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 const RenderExercises = (props) => {
-    console.log(props);
-    console.log(props.name);
-    console.log(props.id);
-    console.log(props.reps);
-    function helloWorld(event) {console.log(event.target)};
     return (
-        props.time===null ? 
+        props.exercise.time===null ? 
         <div className="form-check">
-            <input className="form-check-input" id={props.id} onChange={helloWorld} type="checkbox" value="" key={props.id} />
-            <label className="form-check-label" htmlFor="defaultCheck1">{props.name} (Reps: {props.reps})</label>
+            <input className="form-check-input" id={props.exercise.id} type="checkbox" value="" key={props.exercise.id} />
+            <label className="form-check-label" htmlFor="defaultCheck1">{props.exercise.name} (Reps: {props.exercise.reps})</label>
         </div>
         :
         <div className="form-check">
-            <input className="form-check-input" id={props.id} onChange={helloWorld} type="checkbox" value="" key={props.id} />
-            <label className="form-check-label" htmlFor="defaultCheck1">{props.name} (Time: {props.time})</label>
+            <input className="form-check-input" id={props.exercise.id} type="checkbox" value="" key={props.exercise.id} />
+            <label className="form-check-label" htmlFor="defaultCheck1">{props.exercise.name} (Time: {props.exercise.time})</label>
         </div>
     )
 }
 
-export default RenderExercises;
+function mapStateToProps(state) {
+    return state
+}
+
+export default connect(mapStateToProps)(RenderExercises);

@@ -12,30 +12,30 @@ class App extends React.Component {
   //This logic should be removed from App.js, and moved to the various components
   constructor(props) {
     super(props);
-    this.changeSelection = this.changeSelection.bind(this);
-    this.toggleExercise = this.toggleExercise.bind(this);
-    this.state = defaultStateData;
+    // this.changeSelection = this.changeSelection.bind(this);
+    // this.toggleExercise = this.toggleExercise.bind(this);
+    // this.state = defaultStateData;
   }
 
-  changeSelection(event) {
-    let selectedWorkout = event.target.id;
-    this.setState(state => {
-      return {
-        ...state,
-        workout_selection: selectedWorkout
-      }
-    })
-  }
+  // changeSelection(event) {
+  //   let selectedWorkout = event.target.id;
+  //   this.setState(state => {
+  //     return {
+  //       ...state,
+  //       workout_selection: selectedWorkout
+  //     }
+  //   })
+  // }
 
-  toggleExercise(event) {
-    console.log(event.target.checked);
-  }
+  // toggleExercise(event) {
+  //   console.log(event.target.checked);
+  // }
 
   render() {
   return (
     <Router>
       <div>
-        <WorkoutSelection changeSelection={this.changeSelection} workout_selection={this.state.workout_selection} />
+        <WorkoutSelection />
       </div>
         <div className="btn-group container" role="group" arial-label="completion-menu">
           <Link type="button" className="btn btn-info" to="/">Today's Workout</Link> <br />

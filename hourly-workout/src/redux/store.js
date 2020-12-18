@@ -447,7 +447,7 @@ const defaultState = {
             }
         ]
     },
-    workout_selection: 'sculpt_b'
+    workout_selection: 'sweat_b'
 };
 
 export const store = createStore(rootReducer, defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

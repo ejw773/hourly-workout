@@ -3,8 +3,8 @@ import RenderExercises from './render_exercises'
 import { connect } from 'react-redux';
 
 const RenderSections = (props) => {
-    const workoutName = props.workout_selection;
-    const thisWorkout = props[workoutName];
+    const workoutName = props.workout.workout_selection;
+    const thisWorkout = props.exercises[workoutName];
     return (
         <div className="list-container">
 
@@ -14,8 +14,8 @@ const RenderSections = (props) => {
             <div>
             <h2>Warm-Up</h2>
                 <div>
-                    {thisWorkout.warm_up.map((exercise) => (
-                        <RenderExercises exercise={exercise} section='warm_up'/>
+                    {thisWorkout.warm_up.map((exercise, idx) => (
+                        <RenderExercises exercise={exercise} key={idx} section='warm_up'/>
                     ))}
                 </div>
             </div>
@@ -27,8 +27,8 @@ const RenderSections = (props) => {
             <div>
             <h2>Cycle 1</h2>
                 <div>
-                    {thisWorkout.cycle_1.map((exercise) => (
-                        <RenderExercises exercise={exercise} section='cycle_1' />
+                    {thisWorkout.cycle_1.map((exercise, idx) => (
+                        <RenderExercises exercise={exercise} key={idx} section='cycle_1' />
                     ))}
                 </div>
             </div>
@@ -39,8 +39,8 @@ const RenderSections = (props) => {
             <div>
             <h2>Cycle 2</h2>
                 <div>
-                    {thisWorkout.cycle_2.map((exercise) => (
-                        <RenderExercises exercise={exercise} section='cycle_2' />
+                    {thisWorkout.cycle_2.map((exercise, idx) => (
+                        <RenderExercises exercise={exercise} key={idx} section='cycle_2' />
                     ))}
                 </div>
             </div>
@@ -51,8 +51,8 @@ const RenderSections = (props) => {
             <div>
             <h2>Cycle 3</h2>
                 <div>
-                    {thisWorkout.cycle_3.map((exercise) => (
-                        <RenderExercises exercise={exercise} section='cycle_3' />
+                    {thisWorkout.cycle_3.map((exercise, idx) => (
+                        <RenderExercises exercise={exercise} key={idx} section='cycle_3' />
                     ))}
                 </div>
             </div>

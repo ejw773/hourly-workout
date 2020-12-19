@@ -13,8 +13,8 @@ const Checklist = (props) => {
 
 function mapStateToProps(state) {
     return {
-        currentSelection: state[state.workout_selection].name
+        currentSelection: state[state.workout.workout_selection]
     }
 }
 
-export default connect(mapStateToProps)(Checklist);
+export default connect(mapStateToProps, null)(Checklist);

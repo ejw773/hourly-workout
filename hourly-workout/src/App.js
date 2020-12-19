@@ -5,32 +5,12 @@ import ChecklistComplete from './components/checklist_complete';
 import ChecklistIncomplete from './components/checklist_incomplete';
 import WorkoutSelection from './components/workout_selection';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import defaultStateData from './Data';
 
 
 class App extends React.Component {
-  //This logic should be removed from App.js, and moved to the various components
   constructor(props) {
     super(props);
-    // this.changeSelection = this.changeSelection.bind(this);
-    // this.toggleExercise = this.toggleExercise.bind(this);
-    // this.state = defaultStateData;
   }
-
-  // changeSelection(event) {
-  //   let selectedWorkout = event.target.id;
-  //   this.setState(state => {
-  //     return {
-  //       ...state,
-  //       workout_selection: selectedWorkout
-  //     }
-  //   })
-  // }
-
-  // toggleExercise(event) {
-  //   console.log(event.target.checked);
-  // }
-
   render() {
   return (
     <Router>

@@ -17,7 +17,7 @@ const initialState = {
                 id: 11,
                 time: '0:30',
                 reps: null,
-                isComplete: false
+                isComplete: true
             },
             {
                 name: 'Twist and Pivot',
@@ -218,7 +218,7 @@ const initialState = {
                 id: 38,
                 time: '0:30',
                 reps: null,
-                isComplete: false
+                isComplete: true
             },
             {
                 name: 'Sun Salutations',
@@ -442,13 +442,20 @@ const initialState = {
                 isComplete: false
             }
         ]
-    }
+    },
 };
 
 export default function(state = initialState, action) {
     switch (action.type) {
         case TOGGLE_EXERCISE: {
-            return state;
+            let toggleTarget = state.sculpt_b.warm_up[0].isComplete;
+            console.log(toggleTarget);
+            return {
+                ...initialState,
+                sculpt_b: {
+                    object: 'empty'
+                }
+            };
         }
         default: return state;
     }

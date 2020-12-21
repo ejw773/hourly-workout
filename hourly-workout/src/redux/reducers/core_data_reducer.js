@@ -448,13 +448,11 @@ const initialState = {
 export default function(state = initialState, action) {
     switch (action.type) {
         case TOGGLE_EXERCISE: {
-            let toggleTarget = state.sculpt_b.warm_up[0].isComplete;
-            console.log(toggleTarget);
+            console.log(state.sculpt_b.warm_up[3].id)
+            let toggleID = action.payload.toggleID;
             return {
                 ...initialState,
-                sculpt_b: {
-                    object: 'empty'
-                }
+                [toggleID]: true
             };
         }
         default: return state;

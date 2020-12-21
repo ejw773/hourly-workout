@@ -12,7 +12,7 @@ export const selectWorkout = selection => {
     }
 };
 
-export const toggleExercise = toggleID => {
+export const toggleExercise = (toggleID) => {
     return {
         type: TOGGLE_EXERCISE,
         payload: {

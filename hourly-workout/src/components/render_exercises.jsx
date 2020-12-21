@@ -4,11 +4,9 @@ import { toggleExercise } from '../redux/actions'
 
 const RenderExercises = (props) => {
     const handleToggle = (event) => {
-        console.log(event.target.id);
-        let toggleID = (event.target.id);
-        props.toggleExercise(toggleID)
+        let toggleID = event.target.id;
+        props.toggleExercise(toggleID);
     }
-
     return (
         props.exercise.time===null ? 
         <div className="form-check">

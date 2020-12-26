@@ -5,7 +5,10 @@ import { toggleExercise } from '../redux/actions'
 const RenderExercises = (props) => {
     const handleToggle = (event) => {
         let toggleID = event.target.id;
-        props.toggleExercise(toggleID);
+        console.log(props.exercise.isComplete);
+        let toggleMe = props.exercise;
+        props.toggleExercise(toggleMe);
+        props.exercise.isComplete = !props.exercise.isComplete
     }
     return (
         props.exercise.time===null ? 

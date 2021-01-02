@@ -1,7 +1,8 @@
 import {
     SELECT_WORKOUT,
     TOGGLE_EXERCISE,
-    RESET
+    RESET,
+    CHANGE_NAME
 } from './actionTypes';
 
 export const selectWorkout = selection => {
@@ -27,5 +28,14 @@ export const toggleExercise = (toggleMe) => {
 export const resetWorkout = () => {
     return {
         type: RESET
+    }
+}
+
+export const userName = (userName) => {
+    return {
+        type: CHANGE_NAME,
+        payload: {
+            user: userName
+        }
     }
 }

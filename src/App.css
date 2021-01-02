@@ -2,10 +2,18 @@ h1 {
   color: white;
 }
 
+#preferences h1 {
+  color: black;
+}
+
+#preferences p {
+  color: black;
+}
+
 body {
   align-items: flex-end;
   color: white;
-  background-image: url("img/img2.jpg")
+  background-image: url("img/img5.jpg")
 }
 
 
@@ -37,4 +45,18 @@ h2 {
 
 .selection-bar {
   margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.famous-quote {
+  border: 5px solid white;
+  margin: 0px 50px 0px 50px;
+  padding: 10px;
+  margin-bottom: 100px;
+  max-width: 30rem;
+}
+
+#welcome-note {
+  text-align: center;
+  margin-bottom: 30px;
 }

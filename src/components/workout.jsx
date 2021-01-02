@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 const Workout = (props) => {
     return (
         <div className="container exercise-container">
+            <h1 id="welcome-note">Welcome, {props.userName}</h1>
             <RenderSections />
         </div>
     )
@@ -12,7 +13,7 @@ const Workout = (props) => {
 
 function mapStateToProps(state) {
     return {
-        currentSelection: state[state.workout.workout_selection]
+        userName: state.userName.user
     }
 }
 

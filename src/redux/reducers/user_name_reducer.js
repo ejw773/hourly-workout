@@ -1,13 +1,13 @@
-import { CHANGE_NAME } from "../actionTypes"
+import { SET_NAME } from "../actionTypes"
 
 const initialState = {
     user: "Anonymous"
 };
 
-export default function userName(state = initialState, action) {
+export default function setName(state = initialState, action) {
     console.log(action.payload);
     switch (action.type) {
-        case CHANGE_NAME: {
+        case SET_NAME: {
             return {
                 ...state,
                 user: action.payload.user

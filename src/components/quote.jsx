@@ -37,10 +37,14 @@ class Quote extends React.Component {
         if (error) {
             return <div>Error {error.message}</div>
         } else if (!isLoaded) {
-            return <div><h1>Loading...</h1></div>;
+            return (
+              <div className="card famous-quote mx-auto bg-transparent">
+              <h1>Loading...</h1>
+          </div>  
+            )
         } else {
             return (
-        <div className="famous-quote">
+        <div className="card famous-quote mx-auto bg-transparent">
             <h1>"{this.state.quoteText}"</h1>
             <p>{this.state.quoteSource}</p>
         </div>

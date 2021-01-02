@@ -26,10 +26,10 @@ const Landing = (props) => {
                     </div>
                     <input type="text" className="form-control" placeholder="Your Name" value={props.user} onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1"></input>
                 </div>
+                <div className="card-body">
+                <a type="button" href='/workout' className="btn-lg btn-success">Go!</a>
 
             </div>
-            <div className="card-body">
-                <button type="button" onClick={handleSubmit} className="btn-lg btn-success">Go!</button>
             </div>
             <div className="card-footer text-white">"Hourly Workout" is a personal app created by Elijah Wilcott as a way to work some P90 into an hourly routine on those days when setting up a 30-minute video just won't work. It currently only inclues the "B" (second month) workouts.</div>
         </div>

@@ -1,16 +1,18 @@
 import React from 'react';
 import WorkoutSelection from './workout_selection';
-import { connect } from 'react-redux';
 import ResetButton from './reset.jsx'
+import Quote from './quote'
+import { connect } from 'react-redux';
 
 
-const Checklist = (props) => {
+const Preferences = (props) => {
     return (
-        <div className="card text-center text-black bg-warning mb-3 mx-auto" style={{maxWidth: '30rem'}}>
+        <div id="preferences" className="card text-center text-black bg-warning mb-3 mx-auto" style={{maxWidth: '30rem'}}>
             <h1>Change Workout</h1>
             <WorkoutSelection />
             <h1>Reset Exercises</h1>
             <ResetButton />
+            <Quote />
         </div>
     )
 };
@@ -21,4 +23,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, null)(Checklist);
+export default connect(mapStateToProps, null)(Preferences);

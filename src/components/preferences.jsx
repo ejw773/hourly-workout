@@ -6,10 +6,10 @@ import ResetButton from './reset.jsx'
 
 const Checklist = (props) => {
     return (
-        <div>
-            <h2>Change Workout</h2>
+        <div className="card text-center text-black bg-warning mb-3 mx-auto" style={{maxWidth: '30rem'}}>
+            <h1>Change Workout</h1>
             <WorkoutSelection />
-            <h2>Reset Exercises</h2>
+            <h1>Reset Exercises</h1>
             <ResetButton />
         </div>
     )

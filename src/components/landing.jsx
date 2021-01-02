@@ -13,17 +13,20 @@ const Landing = (props) => {
         console.log(event.target);
     }
     return (
-        <div className="card text-center text-black bg-danger mb-3">
+        <div className="card text-center text-black bg-primary mb-3 mx-auto" style={{maxWidth: '30rem'}}>
             <div className="card-header">P90</div>
             <div className="card-body">
                 <h5 className="card-title">Select Your Workout</h5>
                 <WorkoutSelection />
+
+                {/* Form Here */}
                 <h5 className="card-title">Enter Your Name</h5>
                 <div className="input-group mb-3">
                     <div className="input-group-prepend">
                     </div>
                     <input type="text" className="form-control" placeholder="Your Name" value={props.user} onChange={handleChange} aria-label="Username" aria-describedby="basic-addon1"></input>
                 </div>
+
             </div>
             <div className="card-body">
                 <button type="button" onClick={handleSubmit} className="btn-lg btn-success">Go!</button>

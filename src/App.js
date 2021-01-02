@@ -5,7 +5,8 @@ import Workout from './components/workout';
 import Preferences from './components/preferences';
 import Footer from './components/footer'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
+// mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 class App extends React.Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class App extends React.Component {
       <Router>
           <div className="selection-bar btn-group container d-flex p-2" role="group" arial-label="completion-menu">
             <Link type="button" className="btn btn-primary" to="/">Home</Link> <br />
-            <Link type="button" className="btn btn-info" to="/workout">Workout</Link> <br />
+            <Link type="button" className="btn btn-success" to="/workout">Workout</Link> <br />
             <Link type="button" className="btn btn-warning" to="/preferences">Preferences</Link>
           </div>
         <Switch>

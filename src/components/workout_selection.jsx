@@ -16,8 +16,7 @@ const WorkoutSelection = (props) => {
     props.workout_selection === 'sculpt_b' ? sculptButton = selectedButton : sweatButton = selectedButton ;
     return (
         <div className="selection-bar">
-            <h1>Select Today's Workout:</h1>
-            <div className="button-group">
+        <div className="btn-group container" role="group" arial-label="completion-menu">
                 <button type="button" className={sculptButton} id="sculpt_b" onClick={changeSelection}>Sculpt</button>
                 <button type="button" className={sweatButton} id="sweat_b" onClick={changeSelection}>Sweat</button>
             </div>

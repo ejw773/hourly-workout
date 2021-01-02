@@ -5,8 +5,9 @@ h1 {
 body {
   align-items: flex-end;
   color: white;
-  background-image: url('img/weights.jpg');
+  background-image: url("img/img2.jpg")
 }
+
 
 .list-container {
   color: white;
@@ -24,3 +25,9 @@ h2 {
   color: red;
   text-align: center;
 }
+
+.exercise-container {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+

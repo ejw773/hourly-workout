@@ -1,2 +1,3 @@
 export const SELECT_WORKOUT = "SELECT_WORKOUT";
 export const TOGGLE_EXERCISE = "TOGGLE_EXERCISE";
+export const RESET = "RESET";

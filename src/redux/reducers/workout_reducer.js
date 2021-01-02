@@ -4,7 +4,7 @@ const initialState = {
     workout_selection: "sculpt_b"
 };
 
-export default function(state = initialState, action) {
+export default function workout(state = initialState, action) {
     switch (action.type) {
         case SELECT_WORKOUT: {
             return {

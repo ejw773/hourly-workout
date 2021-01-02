@@ -2,10 +2,9 @@ import React from 'react';
 import RenderSections from './render_sections';
 import { connect } from 'react-redux';
 
-const Checklist = (props) => {
+const Workout = (props) => {
     return (
-        <div className="container">
-            <h1>Today's Selection: {props.currentSelection}</h1>
+        <div className="container exercise-container">
             <RenderSections />
         </div>
     )
@@ -17,4 +16,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, null)(Checklist);
+export default connect(mapStateToProps, null)(Workout);

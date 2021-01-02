@@ -7,7 +7,6 @@ const RenderSections = (props) => {
     const thisWorkout = props.exercises[workoutName];
     return (
         <div className="list-container">
-
         {
             thisWorkout.warm_up
             ?

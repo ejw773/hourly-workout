@@ -1,6 +1,7 @@
 import {
     SELECT_WORKOUT,
-    TOGGLE_EXERCISE
+    TOGGLE_EXERCISE,
+    RESET
 } from './actionTypes';
 
 export const selectWorkout = selection => {
@@ -12,11 +13,19 @@ export const selectWorkout = selection => {
     }
 };
 
-export const toggleExercise = (toggleID) => {
+export const toggleExercise = (toggleMe) => {
     return {
         type: TOGGLE_EXERCISE,
         payload: {
-            toggleID
+            name: toggleMe.name,
+            id: toggleMe.id,
+            isComplete: toggleMe.isComplete
         }
+    }
+}
+
+export const resetWorkout = () => {
+    return {
+        type: RESET
     }
 }

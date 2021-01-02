@@ -7,11 +7,13 @@ import { connect } from 'react-redux';
 
 const Preferences = (props) => {
     return (
-        <div id="preferences" className="card text-center text-black bg-warning mb-3 mx-auto" style={{maxWidth: '30rem'}}>
-            <h1>Change Workout</h1>
-            <WorkoutSelection />
-            <h1>Reset Exercises</h1>
-            <ResetButton />
+        <div>
+            <div id="preferences" className="card text-center text-black bg-warning mb-3 mx-auto" style={{maxWidth: '30rem'}}>
+                <h1>Change Workout</h1>
+                <WorkoutSelection />
+                <h1>Reset Exercises</h1>
+                <ResetButton />
+            </div>
             <Quote />
         </div>
     )

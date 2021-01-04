@@ -30,17 +30,13 @@ const Landing = (props) => {
                 <form className="preferences-container form-inline my-2 my-lg-0" onSubmit={handleSubmit}>
                     <h5 className="card-title">Enter Your Name</h5>
                     <input value={props.input} onChange={handleChange} className="form-control mr-sm-2" type="search" placeholder="Your Name" aria-label="Search" />
+                    <button className="btn btn-success btn-lg set-name">Set Name</button>
                     <h6 className="current-name">Current Name: {props.user}</h6>
                 </form>
+                </div>
 
-                {/* Reset Workout */}
-                <div className="preferences-container">
-                    <h5 className="card-title">Reset Workout</h5>
-                    <ResetButton />
-                </div>
-                </div>
             {/* About Hourly Workout */}
-            <div className="card-footer text-white">"Hourly Workout" is a personal app created by Elijah Wilcott as a way to work some P90 into an hourly routine on those days when setting up a 30-minute video just won't work. It currently only inclues the "B" (second month) workouts.</div>
+            <div className="card-footer text-white bg-secondary">"Hourly Workout" is a personal app created by Elijah Wilcott as a way to work some P90 into an hourly routine on those days when setting up a 30-minute video just won't work. It currently only inclues the "B" (second month) workouts.</div>
         </div>
     )
 };

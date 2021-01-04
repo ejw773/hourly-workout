@@ -2,14 +2,6 @@ h1 {
   color: white;
 }
 
-#preferences h1 {
-  color: black;
-}
-
-#preferences p {
-  color: black;
-}
-
 body {
   align-items: flex-end;
   color: white;
@@ -36,12 +28,8 @@ h2 {
 
 .exercise-container {
   margin-top: 20px;
-  margin-bottom: 100px;
   max-width: 30rem;
-}
-
-.reset-button {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .selection-bar {
@@ -72,4 +60,17 @@ h2 {
 .current-name {
   font-style: italic;
   margin-top: 10px;
+}
+
+.reset-container {
+  max-height: 100px;
+  padding: 10px;
+}
+
+.empty-div {
+  height: 100px;
+}
+
+.set-name {
+  margin-top: 5px;
 }

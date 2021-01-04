@@ -2,7 +2,6 @@ import { TOGGLE_EXERCISE } from "../actionTypes"
 import { RESET } from "../actionTypes"
 
 const initialState = {
-    sculpt_b: {
     10: false,
     11: false,
     12: false,
@@ -29,9 +28,7 @@ const initialState = {
     33: false,
     34: false,
     35: false,
-    36: false
-    },
-    sweat_b: {
+    36: false,
     37: false,
     38: false,
     39: false,
@@ -65,7 +62,6 @@ const initialState = {
     67: false,
     68: false,
     69: false
-    }
 };
 
 export default function toggle(state = initialState, action) {
@@ -73,12 +69,9 @@ export default function toggle(state = initialState, action) {
         case TOGGLE_EXERCISE: {
             return {
                 ...state,
-                [action.payload.workoutSelection]: {
-                    ...state[action.payload.workoutSelection],
-                    [action.payload.id]: action.payload.toggleDirection
-                    }
-                }
+                [action.payload.id]: !state[action.payload.id]
             }
+        }
         case RESET: {
             return initialState;
         }

@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkoutSelection from './workout_selection';
-import ResetButton from './reset';
 import { connect } from 'react-redux';
 import { changeInput } from '../redux/actions';
 import { setName } from '../redux/actions';

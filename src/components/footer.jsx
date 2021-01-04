@@ -25,10 +25,15 @@ const Footer = (props) => {
     let undoneObject = {
         width: undonePercent
     }
+    let barColor = "progress-bar progress-bar-striped"
+    if (doneAmount === 100) {
+        barColor = 'progress-bar bg-success'
+        console.log("Success!")
+    }
     return (
         <div>
             <div className="fixed-bottom footer progress">
-                <div className="progress-bar progress-bar-striped" role="progressbar" style={doneObject} aria-valuenow={doneString} aria-valuemin="0" aria-valuemax="100"></div>
+                <div className={barColor} role="progressbar" style={doneObject} aria-valuenow={doneString} aria-valuemin="0" aria-valuemax="100"></div>
                 <div className="progress-bar bg-dark" role="progressbar" style={undoneObject} aria-valuenow={undoneString} aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <nav className="navbar fixed-bottom navbar-dark justify-content-center footer">

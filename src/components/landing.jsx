@@ -18,7 +18,8 @@ const Landing = (props) => {
         props.changeInput('')
     }
     return (
-        <div className="card text-center text-black bg-primary mb-3 mx-auto" style={{maxWidth: '30rem'}}>
+        <div>
+        <div className="card text-center text-black bg-primary mb-3 mx-auto preferences-card" style={{maxWidth: '30rem'}}>
             <div className="card-body">
                 {/* Select Workout */}
                 <div className="preferences-container">
@@ -37,6 +38,9 @@ const Landing = (props) => {
 
             {/* About Hourly Workout */}
             <div className="card-footer text-white bg-secondary">"Hourly Workout" is a personal app created by Elijah Wilcott as a way to work some P90 into an hourly routine on those days when setting up a 30-minute video just won't work. It currently only inclues the "B" (second month) workouts.</div>
+        </div>
+        <div className="empty-div"></div>
+
         </div>
     )
 };

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { selectWorkout } from '../redux/actions';
 
 const WorkoutSelection = (props) => {
-    const selectedButton = 'btn btn-danger btn-lg';
+    const selectedButton = 'btn btn-success btn-lg';
     const unselectedButton = 'btn btn-secondary btn-lg';
     let sculptButton = unselectedButton;
     let sweatButton = unselectedButton;

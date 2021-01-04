@@ -1,7 +1,7 @@
 import { CHANGE_INPUT } from "../actionTypes"
 
 const initialState = {
-    input: "Enter Your Name"
+    input: ""
 };
 
 export default function changeInput(state = initialState, action) {

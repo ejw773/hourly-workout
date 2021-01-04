@@ -5,8 +5,7 @@ class Quote extends React.Component {
         super(props);
         this.state = {
             error: null,
-            isLoaded: false,
-            items: []
+            isLoaded: false
         };
     }
 
@@ -33,7 +32,7 @@ class Quote extends React.Component {
       }
 
     render() {
-        const { error, isLoaded, items } = this.state;
+        const { error, isLoaded } = this.state;
         if (error) {
             return <div>Error {error.message}</div>
         } else if (!isLoaded) {

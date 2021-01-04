@@ -15,13 +15,13 @@ export const selectWorkout = selection => {
     }
 };
 
-export const toggleExercise = (toggleMe) => {
+export const toggleExercise = (workoutSelection, toggleMe, thisToggle) => {
     return {
         type: TOGGLE_EXERCISE,
         payload: {
-            name: toggleMe.name,
             id: toggleMe.id,
-            isComplete: toggleMe.isComplete
+            workoutSelection: workoutSelection,
+            toggleDirection: thisToggle
         }
     }
 }
@@ -49,3 +49,4 @@ export const setName = (userName) => {
         }
     }
 }
+

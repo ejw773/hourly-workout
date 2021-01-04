@@ -68,13 +68,9 @@ h2 {
 }
 
 .empty-div {
-  height: 50px;
+  height: 40px;
 }
 
 .set-name {
   margin-top: 5px;
-}
-
-.footer {
-  height: 60px;
 }

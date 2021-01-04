@@ -1,12 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { changePercent } from '../redux/actions';
 
 const Footer = (props) => {
-    let theWorkout = props.workout;
-    let rawProgressInfo = props.toggle;
-    let progressInfo = [];
-    let doneAmount = 25;
+    const theWorkout = props.workout;
+    const dataSet = props.toggle[theWorkout];
+    const theArray = Object.values(dataSet);
+    let theTotal = theArray.length;
+    let totalFinished = 0;
+    let i;
+    for (i = 0; i < theTotal; i++) {
+        if (theArray[i] === true) {
+            totalFinished = totalFinished + 1;
+        }
+    }
+    let doneAmount = (totalFinished / theTotal) * 100;
     let undoneAmount = 100 - doneAmount;
     let doneString = doneAmount.toString();
     let undoneString = undoneAmount.toString();

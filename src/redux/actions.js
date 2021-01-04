@@ -16,17 +16,12 @@ export const selectWorkout = selection => {
 };
 
 export const toggleExercise = (workoutSelection, toggleMe, thisToggle) => {
-    console.log(thisToggle);
-    console.log(!thisToggle);
-    let toggleDirection = thisToggle;
     return {
         type: TOGGLE_EXERCISE,
         payload: {
-            // name: toggleMe.name,
             id: toggleMe.id,
             workoutSelection: workoutSelection,
-            toggleDirection: toggleDirection
-            // isComplete: toggleMe.isComplete
+            toggleDirection: thisToggle
         }
     }
 }

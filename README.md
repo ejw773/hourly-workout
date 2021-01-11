@@ -12,7 +12,7 @@ I've hard coded the exercises for the second month ("B") workouts. Nothing beyon
 
 ## Screenshots
 
-[Home Screen](docs/img/IMG_7255.PNG)
+[Home Screen](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7255.PNG)
 
 
 

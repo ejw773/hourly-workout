@@ -10,6 +10,15 @@ I successfully did the first month of P90 before starting coding bootcamp. Month
 
 I've hard coded the exercises for the second month ("B") workouts. Nothing beyond that at this point.
 
+## :hammer_and_wrench: Technologies Used
+
+- HTML
+- CSS
+- Javascript
+- React
+- Redux
+- react-router-dom
+
 ## Screenshots
 
 - **Landing Page - Enter Your Name**  

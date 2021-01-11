@@ -12,19 +12,19 @@ I've hard coded the exercises for the second month ("B") workouts. Nothing beyon
 
 ## Screenshots
 
-- Landing Page - Enter Your Name
+- Landing Page - Enter Your Name  
 ![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7255.PNG)
 
-- Exercise Page - Check Them off One by One
+- Exercise Page - Check Them off One by One  
 ![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7257.PNG)
 
-- Progress Bar at Bottom of Screen
+- Progress Bar at Bottom of Screen  
 ![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7258.PNG)
 
-- Progress Bar Complete
+- Progress Bar Complete  
 ![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7259.PNG)
 
-- Inspirational Quote (Yes, I confess, just to get an API call into the project)
+- Inspirational Quote (Yes, I confess, just to get an API call into the project)  
 ![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7260.PNG)
 
 ## Demo Video

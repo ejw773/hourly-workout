@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 const Footer = (props) => {
     const theWorkout = props.workout;
     const dataSet = props.toggle[theWorkout];
+    console.log(dataSet);
     const theArray = Object.values(dataSet);
     let theTotal = theArray.length;
     let totalFinished = 0;

@@ -10,6 +10,8 @@ Doing [P90](https://www.beachbodyondemand.com/programs/p90/workouts)? Don't have
 
 I successfully did the first month of P90 before starting coding bootcamp. Except for weekends, the second month fell completely by the wayside. Then I realized: If I broke the workout into bits and pieces throughout the day on weekdays, it becomes much more manageable. I created this React project to keep track.
 
+This tool assumes you are already doing the P90 program, and working with the videos often enough to know each of the listed exercises.
+
 ## Status
 
 I've hard-coded the exercises for the second month ("B") workouts. Nothing beyond that at this point.

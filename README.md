@@ -15,6 +15,7 @@ I've hard coded the exercises for the second month ("B") workouts. Nothing beyon
 - HTML
 - CSS
 - Javascript
+- Bootstrap
 - React
 - Redux
 - react-router-dom

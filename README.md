@@ -12,6 +12,10 @@ I've hard coded the exercises for the second month ("B") workouts. Nothing beyon
 
 ## Screenshots
 
+[Home Screen](docs/img/IMG_7255.PNG)
+
+
+
 ## Demo Video
 
 MIT © Elijah Wilcott

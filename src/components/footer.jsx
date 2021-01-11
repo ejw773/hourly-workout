@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 const Footer = (props) => {
+    console.log(props);
     const theWorkout = props.workout;
     const dataSet = props.toggle[theWorkout];
     console.log(dataSet);
@@ -28,12 +30,27 @@ const Footer = (props) => {
     let barColor = "progress-bar progress-bar-striped"
     if (doneAmount === 100) {
         barColor = 'progress-bar bg-success'
+        console.log("Success!")
     }
     return (
-        <nav className="navbar fixed-bottom navbar-dark bg-primary justify-content-center">
-            <a className="navbar-brand" href="https://www.beachbodyondemand.com/programs/p90/workouts" target="_blank" rel="noreferrer">Workout from P90 by Beachbody.</a>
-        </nav>
+        <div>
+            <div className="fixed-bottom footer progress">
+                <div className={barColor} role="progressbar" style={doneObject} aria-valuenow={doneString} aria-valuemin="0" aria-valuemax="100"></div>
+                <div className="progress-bar bg-dark" role="progressbar" style={undoneObject} aria-valuenow={undoneString} aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <nav className="navbar fixed-bottom navbar-dark justify-content-center footer">
+                <a className="navbar-brand" href="https://www.beachbodyondemand.com/programs/p90/workouts" target="_blank" rel="noreferrer">Workout from P90 by Beachbody.</a>
+            </nav>
+
+        </div>
     )
 }
 
-export default Footer
+const mapStateToProps = state => {
+    return {
+        workout: state.workout.workout_selection,
+        toggle: state.toggle
+    }
+}
+
+export default connect(mapStateToProps)(Footer)

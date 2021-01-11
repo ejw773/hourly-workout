@@ -20,7 +20,7 @@ I've hard coded the exercises for the second month ("B") workouts. Nothing beyon
 - Redux
 - react-router-dom
 
-## Screenshots
+## 🖥 Screenshots
 
 - **Landing Page - Enter Your Name**  
   

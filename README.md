@@ -12,7 +12,11 @@ I've hard coded the exercises for the second month ("B") workouts. Nothing beyon
 
 ## Screenshots
 
-![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7255.PNG)
+![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7255.PNG)![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7257.PNG)
+![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7258.PNG)
+![image](https://raw.githubusercontent.com/ejw773/hourly-workout/main/docs/img/IMG_7259.PNG)
+
+
 
 
 

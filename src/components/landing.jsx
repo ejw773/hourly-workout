@@ -36,7 +36,7 @@ const Landing = (props) => {
                 </div>
 
             {/* About Hourly Workout */}
-            <div className="card-footer text-white bg-secondary">"Hourly Workout" is a personal app created by Elijah Wilcott as a way to work some P90 into an hourly routine on those days when setting up a 30-minute video just won't work. It currently only inclues the "B" (second month) workouts.</div>
+            <div className="card-footer text-white bg-secondary">"Hourly Workout" is a personal app created by <a target="_blank" rel="noreferrer" href="https://www.elijahwilcott.com" id="elijah-link">Elijah Wilcott</a> as a way to work some P90 into an hourly routine on those days when setting up a 30-minute video just won't work. It currently only inclues the "B" (second month) workouts.</div>
         </div>
         <div className="empty-div"></div>
 

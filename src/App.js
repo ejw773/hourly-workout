@@ -4,7 +4,7 @@ import Landing from './components/landing';
 import Workout from './components/workout';
 import QuotePage from './components/quotepage';
 import Footer from './components/footer'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 class App extends React.Component {
   constructor(props) {
